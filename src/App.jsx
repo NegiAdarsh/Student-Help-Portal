@@ -2,6 +2,9 @@ import { useState, useEffect } from "react";
 import {useRef} from 'react';
 import "./App.css";
 import axios from "axios";
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+
 
 
 const App = () => {
@@ -10,6 +13,7 @@ const App = () => {
   const inputRef = useRef(null);
   
   const [myData, setMyData] = useState([]);
+
   const [isError, setIsError] = useState("");
 
 
@@ -37,7 +41,7 @@ const App = () => {
 
   return (
     <>
-      <h1>Axios Tutorial</h1>
+
       {isError !== "" && <h2>{isError}</h2>}
 
         {/* <input
@@ -48,7 +52,7 @@ const App = () => {
       /> */}
       
       {/* <button onClick={handleClick}>Find</button> */}
-      <div class="input-group">
+      {/* <div class="input-group">
         <input ref={inputRef}
           type="text" id="message"
           name="message" 
@@ -57,12 +61,29 @@ const App = () => {
           aria-describedby="search-addon" />
 
         <button type="button" class="btn btn-dark" onClick={handleClick}>Find</button>
-      </div>
+      </div> */}
  
-            <div className="row">
+        
+          
+      <div class="image-div">
+      <Row>
+        <Col xs={12} md={6} lg={6}> 
+        <div class="input-group">
+          <input ref={inputRef}
+            type="text" id="message"
+            name="message" 
+            class="form-control rounded"
+            placeholder="Search" aria-label="Search"
+            aria-describedby="search-addon" />
+
+          <button type="button" class="btn btn-dark" onClick={handleClick}>Find</button>
+      </div></Col>
+        <Col xs={12} md={6} lg={6}>
+        <div>
             {
-             
+
                   myData.slice(0,1).map((post) => {
+
                   const { id ,width, height, url ,src} = post;
                   return (
                     <div key={id}>
@@ -70,14 +91,16 @@ const App = () => {
                         <p>{height}</p>
                         <p>{url}</p>
                         <p>{src.medium}</p> */}
-                        <img src={src.medium} className="searched-img"/>
+                        <img src={src.landscape} className="searched-img" />
                     </div>
                   );
                   })
                
           }
-          </div>
-   
+          </div></Col>
+      </Row>
+      </div>
+    
         
         
     

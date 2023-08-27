@@ -1,9 +1,8 @@
 .input-group
 {
-    padding:25% 5% 25% 5%;
-    width: 100%;
-    height: 100%;
-    background-color: yellow;
+    padding:4% 10%;
+    background-color: #00C4FF;
+
     /* margin-top: 20; */
 }
 
@@ -14,9 +13,92 @@
   padding: 3%;
 }
 
-.image-div
+
+.def
 {
-  padding: 3% 7%;
+  padding: 15px;
+  background-color: gray;
+  margin: 12px;
+  border-radius: 12px;
+  border-color: pink;
+  border: 10px;
+}
+
+.btn
+{
+  border-radius: 40px;
+  background-color: black;
+  color: white;
+}
+.form-control
+{
+  border-radius: 40px;
+}
+
+video{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video-div
+{
+  padding: 2%;
+  /* background-color: black; */
+  background-image: linear-gradient(to left,#eb4d21, #CD1818,#c54f33,#c14d36,#F94C10,#F49D1A,#FAC213,#FEB139,#F4E185);
+}
+.special-heading
+{
+    font-size: 2.5rem;
+    padding-bottom: 1%;
+    /* color: ; */
+}
+.antonym
+{
+  padding: 5% 7%;
   background-color: yellow;
-  /* margin: 20px; */
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.synonym
+{
+  padding: 5% 7%;
+  background-color: green;
+  /* overflow-x:  auto; */
+  flex-wrap: wrap;
+  display: flex;
+  position: relative;
+
+}
+.syns
+{
+  background-color: white;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 5px;
+  height: 45px;
+  /* display: inline;
+   */
+
+   width: fit-content;
+}
+
+
+footer
+{
+  background-color: black;
+  padding: 7% 15%;
+  text-align: center;
+  color: white;
+}
+.social-icon
+{
+  color: white;
+  margin: 20px 30px;
+}
+
+.social-icon:hover
+{
+  color: #FF9F29;
 }

@@ -107,8 +107,11 @@ const App = () => {
       </div>
           
       
-    
+    <div class="search-text">
+      <h2 className="search-text-heading">SEARCH FOR YOUR KEYWORD FOR ANSWERS</h2>
+    </div>
         <div class="input-group">
+          
           <input ref={inputRef}
             type="text" id="message"
             name="message" 
@@ -118,13 +121,14 @@ const App = () => {
           
           <button type="button" class="btn btn-outline-success" onClick={handleClick}><i class="fa-solid fa-2x fa-magnifying-glass"></i></button>
       </div>
+      
       {isError !== "" && <h2>No result found </h2>}
     
       <Row>
         <Col xs={12} md={6} lg={6}>
         <div>
         {
-        myDictData!= null && myDictData.slice(0,5).map((value) => {
+        myDictData!= null && myDictData.slice(0,4).map((value) => {
           const { id ,definition,example} = value;
           return (
             <div key={id} className="def">
@@ -132,8 +136,8 @@ const App = () => {
                 <p>{height}</p>
                 <p>{url}</p>
                 <p>{src.medium}</p> */}
-                <p>{definition || "No Definition found"}</p>
-                <p>{example|| "No Example found"}</p>
+                <p className="def-definition"><b>Definition:</b> {definition || "No Definition found"}</p>
+                <b>Example:</b> <p class="def-example">{example|| "No Example found"}</p>
                 <br />
                 <br />
             </div>
@@ -150,7 +154,7 @@ const App = () => {
                   myData.slice(0,2).map((post) => {
                   const { id ,width, height, url ,src} = post;
                   return (
-                    <div key={id}>
+                    <div key={id} className="img-div">
                         {/* <h2>{width}</h2>
                         <p>{height}</p>
                         <p>{url}</p>
@@ -164,10 +168,16 @@ const App = () => {
           </div></Col>
           
       </Row>
+
+      <div className="antonym-div">
+        <h2 className="antonym-text">
+        Antonym are the words that have the exact opposite meaning to another.
+        </h2>
+      </div>
       <div class="antonym">
-          { 
+      { 
           mySynData.antonyms != "" && mySynData.antonyms?.length > 0 && mySynData.antonyms?.[0] != "" &&
-          <h1 className="special-heading" >Antonym for your words are :</h1> }
+          <h2 className="result-text">Antonyms :</h2> }
           {
             mySynData.antonyms != "" && mySynData.antonyms?.length > 0 && mySynData.antonyms?.[0] != "" && mySynData.antonyms?.slice(0,15).map((value)=>{
               return(
@@ -181,18 +191,25 @@ const App = () => {
           }
       </div>
 
+
+      <div className="synonym-div">
+        <h2 className="synonym-text">
+        A synonym is a word, morpheme, or phrase that means exactly or nearly the same as another word
+        </h2>
+      </div>
+
       <div className="synonym">
 
         {
          
          mySynData.synonyms != "" && mySynData.synonyms?.length > 0 && mySynData.synonyms?.[0] != "" &&
-          <h1 className="special-heading" >Synonym for your words are :</h1>
+          <h1 className="special-heading" >Synonyms :</h1>
         }
         
           {
-            mySynData.synonyms != "" && mySynData.synonyms?.length > 0 && mySynData.synonyms?.[0] != "" && mySynData.synonyms?.slice(0,15).map((value)=>{
+            mySynData.synonyms != "" && mySynData.synonyms?.length > 0 && mySynData.synonyms?.[0] != "" && mySynData.synonyms?.slice(0,13).map((value)=>{
               return(
-                <div class="syns">
+                <div class="syns-2">
                   {value}
 
                 </div>

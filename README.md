@@ -65,25 +65,22 @@ We welcome contributions from the community to make the Student Help Portal even
 
 
 ## Screenshots
-https://github.com/NegiAdarsh/Student-Help-Portal/assets/100505819/cfa4499e-459d-493f-9414-d6c819663a6e
+
+![ezgif com-video-to-gif](https://github.com/NegiAdarsh/Student-Help-Portal/assets/100505819/568e04d1-022c-49bb-86c9-934a0fed4cea)
 
 1.
 ![App Screenshot]( https://github.com/NegiAdarsh/Student-Help-Portal/assets/100505819/561b02c0-1c97-4607-a7ca-200f9ad61a93)
-2. 
-
-![App Screenshot]( https://github.com/NegiAdarsh/Student-Help-Portal/assets/100505819/9135c2e8-d95f-40b8-9f0c-a10f98726392 )
-3.
-
+2.
 ![App Screenshot](https://github.com/NegiAdarsh/Student-Help-Portal/assets/100505819/134ac287-dbd5-4c13-b511-f056e2070998 )
-4.
-
+3.
 ![App Screenshot](https://github.com/NegiAdarsh/Student-Help-Portal/assets/100505819/e60dea40-3fbe-4ab4-9659-ff546dc7b97d)
-5.
-
+4.
 ![App Screenshot]( https://github.com/NegiAdarsh/Student-Help-Portal/assets/100505819/605fed5d-5674-492b-99a3-01d8cf0d709c)
-6.
-
+5.
 ![App Screenshot](https://github.com/NegiAdarsh/Student-Help-Portal/assets/100505819/3fd111f2-e673-4284-ae57-1d993cd7ebc1)
+6.
+![App Screenshot]( https://github.com/NegiAdarsh/Student-Help-Portal/assets/100505819/9135c2e8-d95f-40b8-9f0c-a10f98726392 )
+
 
 
 

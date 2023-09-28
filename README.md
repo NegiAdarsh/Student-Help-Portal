@@ -65,8 +65,9 @@ We welcome contributions from the community to make the Student Help Portal even
 
 
 ## Screenshots
-1.
+https://github.com/NegiAdarsh/Student-Help-Portal/assets/100505819/cfa4499e-459d-493f-9414-d6c819663a6e
 
+1.
 ![App Screenshot]( https://github.com/NegiAdarsh/Student-Help-Portal/assets/100505819/561b02c0-1c97-4607-a7ca-200f9ad61a93)
 2. 
 

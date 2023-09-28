@@ -66,19 +66,18 @@ We welcome contributions from the community to make the Student Help Portal even
 
 ## Screenshots
 
-![ezgif com-video-to-gif](https://github.com/NegiAdarsh/Student-Help-Portal/assets/100505819/568e04d1-022c-49bb-86c9-934a0fed4cea)
+![Screenshot 2023-09-28 080334](https://github.com/NegiAdarsh/Student-Help-Portal/assets/100505819/72cd936c-f5ec-4b80-aabf-4adeb76814bc)
 
-1.
 ![App Screenshot]( https://github.com/NegiAdarsh/Student-Help-Portal/assets/100505819/561b02c0-1c97-4607-a7ca-200f9ad61a93)
-2.
+
 ![App Screenshot](https://github.com/NegiAdarsh/Student-Help-Portal/assets/100505819/134ac287-dbd5-4c13-b511-f056e2070998 )
-3.
+
 ![App Screenshot](https://github.com/NegiAdarsh/Student-Help-Portal/assets/100505819/e60dea40-3fbe-4ab4-9659-ff546dc7b97d)
-4.
+
 ![App Screenshot]( https://github.com/NegiAdarsh/Student-Help-Portal/assets/100505819/605fed5d-5674-492b-99a3-01d8cf0d709c)
-5.
+NewsLetter
 ![App Screenshot](https://github.com/NegiAdarsh/Student-Help-Portal/assets/100505819/3fd111f2-e673-4284-ae57-1d993cd7ebc1)
-6.
+Footer
 ![App Screenshot]( https://github.com/NegiAdarsh/Student-Help-Portal/assets/100505819/9135c2e8-d95f-40b8-9f0c-a10f98726392 )
 
 

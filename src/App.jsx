@@ -273,7 +273,7 @@ const App = () => {
 
       <footer>
           <p>Subscribe to our newsletter by clicking on bell icon</p>
-          <a href="http://localhost:3000/"><i class="fa-solid social-icon fa-2x fa-bell"></i></a>
+          <a href="https://newsletter-1-yip2.onrender.com/"><i class="fa-solid social-icon fa-2x fa-bell"></i></a>
           <i class="fa-brands fa-facebook social-icon fa-2x"></i>
           <i class="fa-brands fa-instagram social-icon fa-2x"></i>
           <i class="fa-brands fa-twitter social-icon fa-2x"></i>

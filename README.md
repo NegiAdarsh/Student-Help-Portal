@@ -9,8 +9,7 @@ Welcome to the **Student Help Portal**, a web application designed to provide qu
 - [Getting Started](#getting-started)
 - [Usage](#usage)
 - [API](#api)
-- [Contributing](#contributing)
-- [License](#license)
+- [Contribution](#Contribution)
 
 ## Introduction
 
@@ -75,9 +74,9 @@ We welcome contributions from the community to make the Student Help Portal even
 ![App Screenshot](https://github.com/NegiAdarsh/Student-Help-Portal/assets/100505819/e60dea40-3fbe-4ab4-9659-ff546dc7b97d)
 
 ![App Screenshot]( https://github.com/NegiAdarsh/Student-Help-Portal/assets/100505819/605fed5d-5674-492b-99a3-01d8cf0d709c)
-NewsLetter
+## NewsLetter
 ![App Screenshot](https://github.com/NegiAdarsh/Student-Help-Portal/assets/100505819/3fd111f2-e673-4284-ae57-1d993cd7ebc1)
-Footer
+## Footer
 ![App Screenshot]( https://github.com/NegiAdarsh/Student-Help-Portal/assets/100505819/9135c2e8-d95f-40b8-9f0c-a10f98726392 )
 
 

@@ -85,6 +85,11 @@ video{
   background-color: #FFC436;
   flex-wrap: wrap;
   display: flex;
+  border: 2px solid;
+  border-color: white;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
 }
 
 .antonym-div
@@ -121,11 +126,16 @@ video{
 .synonym
 {
   padding: 3% 7%;
+  
   /* background-color: green; */
   /* overflow-x:  auto; */
   flex-wrap: wrap;
   display: flex;
   position: relative;
+  border: 2px solid;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
 
 }
 .syns
@@ -160,6 +170,31 @@ video{
    color: green;
 }
 
+.rhyme-div
+{
+  padding: 3% 7%;
+  background-color: #850E35;
+}
+
+.rhyme-text
+{
+  text-align: center;
+  color: white;
+  font-size: 3rem;
+}
+.rhyme
+{
+  padding: 2% 7% 2% 7%;
+  /* background-color: #eb4d21; */
+  background-color: #850E35;
+  flex-wrap: wrap;
+  border: 2px solid;
+  border-color: white;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  display: flex;
+}
 footer
 {
   background-color: black;
@@ -177,3 +212,4 @@ footer
 {
   color: #FF9F29;
 }
+

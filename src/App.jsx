@@ -11,14 +11,18 @@ import background from './assets/background.mp4';
 const App = () => {
   let url = 'https://api.pexels.com/v1/search?query=';
   let api = 'Kfue9JjBG1UO3DTTlO15DiGm6AFjtA31T4nhbCXUlZnouL3O5MPOVI65';
+  let rhymeapi='emP/fCi22HhN43BQBr3imw==qkbh6DUmOj029CCK';
   let dictUrl = 'https://api.dictionaryapi.dev/api/v2/entries/en/';
   let antsynUrl='https://api.api-ninjas.com/v1/thesaurus?word=';
+  let rhymeurl="https://api.api-ninjas.com/v1/rhyme?word=";
   const inputRef = useRef(null);
   
   const [myData, setMyData] = useState([]);
   const[myDictData, setMyDictData] = useState([]);
   const [mySynData,setMySynData]=useState([]);
+  const [myRhymData,setMyRhymData]=useState([]);
   const [isError, setIsError] = useState("");
+
 
 
   function handleClick() {
@@ -29,6 +33,8 @@ const App = () => {
     getDictData(`${dictUrl}`+inputRef.current.value);
 
     getSaData(`${antsynUrl}`+inputRef.current.value);
+
+    getRhymData(`${rhymeurl}`+inputRef.current.value)
 
     
 
@@ -77,6 +83,27 @@ const App = () => {
 
   }
 
+  const  getRhymData = async(url4) =>{
+    try {
+      const res4 = await axios.get(
+        url4,
+        {
+          headers:{
+            "X-Api-Key": rhymeapi
+          }
+        }
+        );
+      setMyRhymData(res4.data);
+      console.log(res4.data);
+      // for(let synonym of mySynData)
+      // {
+      //   console.log(synonym);
+      // }
+
+    } catch (error) {
+      setIsError(error.message)
+    }
+  }
 
   return (
     <>
@@ -171,7 +198,7 @@ const App = () => {
 
       <div className="antonym-div">
         <h2 className="antonym-text">
-        Antonym are the words that have the exact opposite meaning to another.
+        Antonym are the words that have the exact opposite meaning to another
         </h2>
       </div>
       <div class="antonym">
@@ -220,9 +247,33 @@ const App = () => {
           
 
       </div>
+
+      <div className="rhyme-div">
+        <h2 className="rhyme-text">
+            Rhymes are words That have same ending sound
+        </h2>
+      </div>
+      <div class="rhyme">
+      { 
+          myRhymData != "" && myRhymData?.length > 0 && myRhymData?.[0] != "" &&
+          <h2 className="result-text">Rhymes :</h2> }
+          {
+            myRhymData != "" && myRhymData?.length > 0 && myRhymData?.[0] != "" && myRhymData?.slice(0,15).map((value)=>{
+              return(
+                <div className="syns">
+                  {value}
+
+                </div>
+              )
+
+            })
+          }
+      </div>
+
+
       <footer>
           <p>Subscribe to our newsletter by clicking on bell icon</p>
-          <a href=""><i class="fa-solid social-icon fa-2x fa-bell"></i></a>
+          <a href="http://localhost:3000/"><i class="fa-solid social-icon fa-2x fa-bell"></i></a>
           <i class="fa-brands fa-facebook social-icon fa-2x"></i>
           <i class="fa-brands fa-instagram social-icon fa-2x"></i>
           <i class="fa-brands fa-twitter social-icon fa-2x"></i>
